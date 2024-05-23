@@ -42,6 +42,7 @@ public class Exerc2 extends javax.swing.JFrame {
         x2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculadora de Equação do 2°Grau");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Fórmula de Bhaskara");
@@ -151,6 +152,7 @@ public class Exerc2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void x1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1ActionPerformed
@@ -181,7 +183,6 @@ public class Exerc2 extends javax.swing.JFrame {
             float X2;
 
             delta = (float) Math.pow(valorB, 2) - 4 * valorA * valorC;
-            System.out.println(delta);
             X1 = (float) (-1 * valorB + (Math.sqrt(delta))) / 2 * valorA;
             X2 = (float) (-1 * valorB - (Math.sqrt(delta))) / 2 * valorA;
 
