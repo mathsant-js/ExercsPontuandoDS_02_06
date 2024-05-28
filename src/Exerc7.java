@@ -113,7 +113,7 @@ public class Exerc7 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,7 +125,7 @@ public class Exerc7 extends javax.swing.JFrame {
                             .addComponent(nome)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addGap(87, 87, 87)
+                        .addGap(78, 78, 78)
                         .addComponent(endereco))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,29 +137,31 @@ public class Exerc7 extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(jLabel7))
-                        .addGap(103, 103, 103)
+                        .addGap(92, 92, 92)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(celular)
+                            .addComponent(cep, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(estado, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cidade, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(bairro)
-                            .addComponent(cidade)
-                            .addComponent(estado, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cep)))
+                            .addComponent(celular)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11)
                             .addComponent(jLabel9)
                             .addComponent(jLabel10)
                             .addComponent(incluir))
-                        .addGap(18, 18, 18)
+                        .addGap(22, 22, 22)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
                                 .addComponent(limpar)
-                                .addGap(59, 59, 59)
-                                .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(dataAniversario)
-                            .addComponent(dataCadastro)
+                                .addGap(46, 46, 46)
+                                .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(dataCadastro, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(dataAniversario, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(telefone))))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,31 +224,50 @@ public class Exerc7 extends javax.swing.JFrame {
 
     private void incluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incluirActionPerformed
         if (nome.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite o seu nome completo", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu nome completo", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (endereco.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite o seu endereço", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu endereço", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (bairro.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite o seu bairro", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu bairro", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (cidade.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite o sua cidade", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o sua cidade", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (cep.getText().intern() == "" || cep.getText().intern().length() < 8 || cep.getText().intern().length() < 8) {
-            JOptionPane.showMessageDialog(null, "Digite o seu CEP de maneira correta", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu CEP de maneira correta", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (celular.getText().intern() == "" || celular.getText().intern().length() > 9 || celular.getText().intern().length() < 9) {
-            JOptionPane.showMessageDialog(null, "Digite o seu celular de maneira correta", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu celular de maneira correta", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (telefone.getText().intern() == "" || telefone.getText().intern().length() > 8 || telefone.getText().intern().length() < 8) {
-            JOptionPane.showMessageDialog(null, "Digite o seu telefone", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite o seu telefone", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (dataAniversario.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite a sua data de aniversário", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite a sua data de aniversário", "Erro de cadastro", JOptionPane.ERROR_MESSAGE
+            );
         }
         else if (dataCadastro.getText().intern() == "") {
-            JOptionPane.showMessageDialog(null, "Digite a data de cadastro desse formulário", "Erro de cadastro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Digite a data de cadastro desse formulário", "Erro de cadastro", 
+                    JOptionPane.ERROR_MESSAGE
+            );
         }
         else {
             JOptionPane.showMessageDialog(null, "Dados cadastrados: "
@@ -260,7 +281,10 @@ public class Exerc7 extends javax.swing.JFrame {
                     + "\nTelefone: " + telefone.getText()
                     + "\nData de aniversário: " + dataAniversario.getText()
                     + "\nData de cadastro: " + dataCadastro.getText()
-            );     
+            );
+            int clientCode = Integer.parseInt(codigoCliente.getText());
+            clientCode++;
+            codigoCliente.setText("" + clientCode);
         }
     }//GEN-LAST:event_incluirActionPerformed
 
@@ -280,9 +304,11 @@ public class Exerc7 extends javax.swing.JFrame {
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
         String opcoes[] = {"Sim", "Não"};
-        int resposta = JOptionPane.showOptionDialog(null, "Realmente deseja encerrar o programa?", "Sair", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION, null, opcoes, "");
+        int resposta = JOptionPane.showOptionDialog(
+                null, "Realmente deseja encerrar o programa?", "Sair", 
+                JOptionPane.YES_OPTION, JOptionPane.NO_OPTION, null, opcoes, "");
             if (resposta == JOptionPane.YES_OPTION) {
-               System.exit(WIDTH);
+               System.exit(0);
             }
     }//GEN-LAST:event_sairActionPerformed
 

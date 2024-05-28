@@ -67,18 +67,8 @@ public class Exerc2 extends javax.swing.JFrame {
         jLabel7.setText("x''");
 
         x1.setEnabled(false);
-        x1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                x1ActionPerformed(evt);
-            }
-        });
 
         x2.setEnabled(false);
-        x2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                x2ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,14 +144,6 @@ public class Exerc2 extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void x1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_x1ActionPerformed
-
-    private void x2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_x2ActionPerformed
 
     private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
         if (a.getText().intern() == "") {

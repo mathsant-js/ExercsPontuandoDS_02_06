@@ -149,9 +149,6 @@
     <Component class="javax.swing.JTextField" name="nota3">
     </Component>
     <Component class="javax.swing.JTextField" name="nota4">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nota4ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="limpar">
       <Properties>

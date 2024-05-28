@@ -57,12 +57,6 @@ public class Exerc1 extends javax.swing.JFrame {
 
         jLabel5.setText("Digite a Nota 4");
 
-        nota4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nota4ActionPerformed(evt);
-            }
-        });
-
         limpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Exerc1/format1_16x16.gif"))); // NOI18N
         limpar.setText("Limpar");
         limpar.addActionListener(new java.awt.event.ActionListener() {
@@ -181,10 +175,6 @@ public class Exerc1 extends javax.swing.JFrame {
         nota1.requestFocus();
     }//GEN-LAST:event_limparActionPerformed
 
-    private void nota4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nota4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nota4ActionPerformed
-
     private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
         if (nota1.getText().intern() == "") {
             JOptionPane.showMessageDialog(null, "Digite a Nota 1", "Erro", JOptionPane.WARNING_MESSAGE);
@@ -242,7 +232,7 @@ public class Exerc1 extends javax.swing.JFrame {
     }//GEN-LAST:event_calcularActionPerformed
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
-        System.exit(WIDTH);
+        System.exit(0);
     }//GEN-LAST:event_sairActionPerformed
 
     /**

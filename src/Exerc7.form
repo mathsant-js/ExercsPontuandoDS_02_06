@@ -25,7 +25,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -40,7 +40,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                       <Component id="endereco" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -56,13 +56,13 @@
                           <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="celular" max="32767" attributes="0"/>
+                          <Component id="cep" alignment="1" max="32767" attributes="0"/>
+                          <Component id="estado" alignment="1" max="32767" attributes="0"/>
+                          <Component id="cidade" alignment="1" max="32767" attributes="0"/>
                           <Component id="bairro" max="32767" attributes="0"/>
-                          <Component id="cidade" alignment="0" max="32767" attributes="0"/>
-                          <Component id="estado" max="32767" attributes="0"/>
-                          <Component id="cep" alignment="0" max="32767" attributes="0"/>
+                          <Component id="celular" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -72,20 +72,22 @@
                           <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="incluir" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                               <Component id="limpar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Component id="sair" min="-2" pref="83" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="dataAniversario" max="32767" attributes="0"/>
-                          <Component id="dataCadastro" max="32767" attributes="0"/>
+                          <Component id="dataCadastro" alignment="1" max="32767" attributes="0"/>
+                          <Component id="dataAniversario" alignment="1" max="32767" attributes="0"/>
                           <Component id="telefone" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="37" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
